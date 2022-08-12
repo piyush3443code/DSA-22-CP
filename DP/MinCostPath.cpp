@@ -32,7 +32,7 @@ int minCOst_DP(int **input, int m, int n) {
 	return ans[0][0];
 }
 
-// Iime Complexity : O(m*n)
+// Time Complexity : O(m*n)
 // Because at max m*n unique calls will be made and therafter get stored in output 2-D matrix..
 int minCostPath_Better(int **input, int m, int n, int i, int j, int **ans) {
 	if(i == m- 1 && j == n- 1) {
