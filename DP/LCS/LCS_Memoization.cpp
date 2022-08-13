@@ -49,10 +49,12 @@ int lcs_mem(string s, string t)
     // Each field output[i][j] = lenght of the LCS of (string s of length i and t of length of j).. 
     int **output = new int *[m + 1];
 
-    for (int i = 0; i < m + 1; i++)
-    {
-        output[i] = new int[n + 1];
-    }
+   for(int i = 0; i <= m; i++) {
+		output[i] = new int[n+1];
+		for(int j = 0; j <= n; j++) {
+			output[i][j] = -1;
+		}
+	}
     int length = lcs_mem(s, t, output);
 
     return length;
