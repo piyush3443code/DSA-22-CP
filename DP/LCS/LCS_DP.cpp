@@ -21,7 +21,7 @@ int lcs_dp(string s, string t)
         output[0][i] = 0;
     }
 
-    // Fill the 2nd column which has no dependency
+    // Fill the 1st column which has no dependency
     for (int i = 0; i < m + 1; i++)
     {
         output[i][0] = 0;
