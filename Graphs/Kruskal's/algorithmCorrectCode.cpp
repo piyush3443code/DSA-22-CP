@@ -1,3 +1,7 @@
+Used dynamically allocated array.
+Is the constructor called if we create an array of defined class type?
+What is the difference between predefined data structure and data structure defined using user class?
+
 #include <iostream>
 #include <algorithm>
 using namespace std;
